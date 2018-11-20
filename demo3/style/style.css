@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHer";
+}
+.container {
+  margin: 20px auto;
+  width: 1210px;
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+.title {
+  margin-bottom: 50px;
+}
+.img {
+  width: 1200px;
+  height: 460px;
+  border: 5px solid #bbb;
+  overflow: hidden;
+  zoom: 1;
+  cursor: pointer;
+}
+img {
+  display: none;
+  float: left;
+}
+.img-active {
+  display: block;
+}
+.content{
+  position: relative;
+}
+.button {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+}
+.prev {
+  background: url(../image/pre2.png) no-repeat center center;
+  left: 5px;
+}
+.next {
+  background: url(../image/pre.png) no-repeat center center;
+  left: auto;
+  right: 5px;
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dots {
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  text-align: right;
+  margin-right: 10px;
+}
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 12px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 1) inset;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.dots .active {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4) inset;
+  background: #fff;
+}

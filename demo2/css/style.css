@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  width: 1200px;
+  text-align: center;
+  margin: 50px auto;
+}
+.title {
+  width: 1198px;
+  height: 50px;
+  background-color: #fff;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: rgba(102, 102, 102, 0.1);
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.title-box {
+  width: 25%;
+  font-size: 22px;
+  font-family: "Microsoft YaHei";
+  color: #666;
+  font-weight: bold;
+  float: left;
+  line-height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.active {
+  background-color: #fc0;
+}
+.content {
+  width: 1200px;
+  height: 460px;
+  position: relative;
+}
+.content-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  display: none;
+  cursor: pointer;
+}
+.activation {
+  display: block;
+}

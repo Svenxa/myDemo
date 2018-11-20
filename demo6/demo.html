@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>demo</title>
+    <style type="text/css">
+        .container{
+            max-width: 1000px;
+            height: 500px;
+            margin: 50px auto;
+        }
+        .sky{
+            width: 100%;
+            height: 60%;
+            background: -webkit-linear-gradient(rgb(196, 228, 253),rgb(255,255,255));          
+            background:    -moz-linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+            background:      -o-linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+            background:         linear-gradient(rgb(196, 228, 253),rgb(255,255,255));
+        }
+        .sky > .clouds{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #fff;
+            position: relative;
+        }
+        .sky > .clouds::before{
+            content: "";
+            width: 100px;
+            height: 30px;
+            border-radius: 30px;
+            background: #fff;
+            position: absolute;
+            top:15px;
+            left: -35px;
+        }
+        .sky > .clouds::after{
+            content: "";
+            width: 45px;
+            height: 30px;
+            border-radius: 30px;
+            background: #fff;
+            position: absolute;
+            transform: rotate(60deg);
+            top: 13px;
+            left: -27px;
+        }
+        .grass{
+            width: 100%;
+            height: 40%;
+            background: -webkit-linear-gradient(bottom,rgb(148, 190, 89),rgb(255,255,255));
+            background:    -moz-linear-gradient(to top,rgb(148, 190, 89),rgb(255,255,255));
+            background:      -o-linear-gradient(to top,rgb(148, 190, 89),rgb(255,255,255));
+            background:         linear-gradient(to top,rgb(148, 190, 89),rgb(255,255,255));
+        }
+        .s1{
+            -webkit-transform:translate(400px,20px) scale(.7);
+               -moz-transform:translate(400px,20px) scale(.7);
+                 -o-transform:translate(400px,20px) scale(.7);
+                    transform:translate(400px,20px) scale(.7);
+        }
+        .s2{
+            -webkit-transform:translate(440px,30px) scale(.7);
+               -moz-transform:translate(440px,30px) scale(.7);
+                 -o-transform:translate(440px,30px) scale(.7);
+                    transform:translate(440px,30px) scale(.7);
+        }
+        .s3{
+            -webkit-transform:translate(550px,-60px) scale(.9);
+               -moz-transform:translate(550px,-60px) scale(.9);
+                 -o-transform:translate(550px,-60px) scale(.9);
+                    transform:translate(550px,-60px) scale(.9);
+        }
+        .s4{
+            -webkit-transform:translate(650px,-60px) scale(.5);
+               -moz-transform:translate(650px,-60px) scale(.5);
+                 -o-transform:translate(650px,-60px) scale(.5);
+                    transform:translate(650px,-60px) scale(.5);
+        }
+        .s5{
+            -webkit-transform:translate(750px,-190px) scale(.7);
+               -moz-transform:translate(750px,-190px) scale(.7);
+                 -o-transform:translate(750px,-190px) scale(.7);
+                    transform:translate(750px,-190px) scale(.7);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sky">
+            <div class="clouds s1"></div>
+            <div class="clouds s2"></div>
+            <div class="clouds s3"></div>
+            <div class="clouds s4"></div>
+            <div class="clouds s5"></div>
+        </div>
+        <div class="grass"></div>
+    </div>
+</body>
+</html>
